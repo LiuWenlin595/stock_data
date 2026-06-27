@@ -1,0 +1,176 @@
+[
+    {
+        "reason": "原因是分箱测试时，存在涨跌幅为空的数据。",
+        "solution": "参考：https://bbs.quantclass.cn/thread/19838",
+        "keywords": [
+            "TypeError",
+            "cumprod is not supported for object dtype",
+            "选股框架",
+            "分箱测试"
+        ]
+    },
+    {
+        "reason": "原因是【指数的涨跌幅】和【策略的涨跌幅】长度不一致导致的，通常是指数多更新了一天",
+        "solution": "参考：https://bbs.quantclass.cn/thread/18796",
+        "keywords": [
+            "ValueError",
+            "Length values (xxx) does not match length of index (xxx)",
+            "选股数据整理",
+            "数据长度"
+        ]
+    },
+    {
+        "reason": "通常是因为因子代码写的有问题，或者因子配置有问题导致的",
+        "solution": "参考：https://bbs.quantclass.cn/thread/38021",
+        "keywords": [
+            "KeyError",
+            "'Column not found : 'xxxx''",
+            "选股数据整理",
+            "因子"
+        ]
+    },
+    {
+        "reason": "确认因子文件夹下是否存在Ret.py文件",
+        "solution": "参考:https://bbs.quantclass.cn/thread/37777",
+        "keywords": [
+            "keyError",
+            "['xxx'] not in index",
+            "选股",
+            "因子"
+        ]
+    },
+    {
+        "reason": "通常是因为加载了两份筹码数据，导致筹码数据中的【后复权价格】字段变成了【后复权价格_x】和【后复权价格_y】",
+        "solution": "检查所有加载筹码数据的load函数名称是否一致",
+        "keywords": [
+            "KeyError",
+            "后复权价格",
+            "选股数据整理"
+        ]
+    },
+    {
+        "reason": "因为【选股框架/program/因子】的文件夹中缺少了某个因子导致的。",
+        "solution": "参考:https://bbs.quantclass.cn/thread/38830",
+        "keywords": [
+            "ModuleNotFoundError",
+            "No module named 'program.xx.xx因子'",
+            "选股框架"
+        ]
+    },
+    {
+        "reason": "历史版本代码的遗留问题，将选股框架更新到最新即可。",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779 选股框架Q6",
+        "keywords": [
+            "KeyError",
+            "'下日_None买入涨跌幅'",
+            "选股框架"
+        ]
+    },
+    {
+        "reason": "原因是之前的版本不支持参数遍历，缺少参数遍历需要的params变量导致的。",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779 选股框架Q5",
+        "keywords": [
+            "TypeError",
+            "select_stock() takes 2 positional argumnents but 3 were given",
+            "选股框架"
+        ]
+    },
+    {
+        "reason": "通常是因为加载了两份筹码数据，导致筹码数据中的【后复权价格】字段变成了【后复权价格_x】和【后复权价格_y】",
+        "solution": "参考:https://bbs.quantclass.cn/thread/37778",
+        "keywords": [
+            "KeyError",
+            "后复权价格’",
+            "选股框架"
+        ]
+    },
+    {
+        "reason": "原因是某个周期选中的股票相较于其他股票多了一行数据，或者少了一行数据导致的。",
+        "solution": "参考:https://bbs.quantclass.cn/thread/22496",
+        "keywords": [
+            "TypeError",
+            "can only concatenate list (not \"int\") to list",
+            "选股框架"
+        ]
+    },
+    {
+        "reason": "此问题为pandas版本不对，请将pandas版本更新为1.5.3",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779 通用问题Q9",
+        "keywords": [
+            "ValueError",
+            "is both an index level and a column label,which is ambigous.",
+            "选股数据整理"
+        ]
+    },
+    {
+        "reason": "这个问题是某个周期持有的标的之间的涨跌幅不一样导致的。",
+        "solution": "参考：https://bbs.quantclass.cn/thread/19838",
+        "keywords": [
+            "ValueError",
+            "setting an array element with a sequence. The requested array has an inhomoqueneous shape after 1 dimension. The detected shape was(3,) + inhomageneous part.",
+            "选股"
+        ]
+    },
+    {
+        "reason": "因为【选股框架/program/因子】的文件夹中缺少了某个因子导致的。",
+        "solution": "参考：http://qtcls.cn/38830",
+        "keywords": [
+            "ModuleNotFoundError",
+            "No module named",
+            "选股数据整理"
+        ]
+    },
+    {
+        "reason": "此问题为pandas版本不对，请将pandas版本更新为1.5.3。",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779 通用问题Q10",
+        "keywords": [
+            "AttributeError",
+            "'Rolling' object has no attribute 'rank'",
+            "选股数据整理"
+        ]
+    },
+    {
+        "reason": "OSError: 文件名、目录名或卷标语法不正确",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779 通用问题Q1",
+        "keywords": [
+            "OSError",
+            "OS",
+            "选股数据整理"
+        ]
+    },
+    {
+        "reason": "数据中没有整理出这个因子的数据",
+        "solution": "参考：http://qtcls.cn/37777",
+        "keywords": [
+            "keyError",
+            "not in index",
+            "选股数据整理"
+        ]
+    },
+    {
+        "reason": "低版本的joblib的库不支持电脑账户是中文名的电脑",
+        "solution": "参考：http://qtcls.cn/27853",
+        "keywords": [
+            "UnicodeEncodeError",
+            "'ascli' codes can`t encode characters in position",
+            "选股数据整理"
+        ]
+    },
+    {
+        "reason": "原因是period_offset.csv文件没有及时更新，请点击period_offset.csv前往下载",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779 选股框架Q12",
+        "keywords": [
+            "IndexError",
+            "single positional indexer is out-of-bounds",
+            "选股框架"
+        ]
+    },
+    {
+        "reason": "原因是低版本的joblib的库不支持电脑账户是中文名的电脑。",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779 通用问题Q2",
+        "keywords": [
+            "UnicodeEncodeError",
+            "'ascli' codes can`t encode characters in position 18-20: ordinal not in range(128)"
+        ]
+    }
+]

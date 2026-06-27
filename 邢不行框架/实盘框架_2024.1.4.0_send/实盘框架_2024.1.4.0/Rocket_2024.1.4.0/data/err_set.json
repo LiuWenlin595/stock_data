@@ -1,0 +1,91 @@
+[
+    {
+        "reason": "下单报错",
+        "solution": "参考:https://bbs.quantclass.cn/thread/18505",
+        "keywords": [
+            "ValueError",
+            "cannot convert float NaN to integer",
+            "实盘框架"
+        ]
+    },
+    {
+        "reason": "原因也是QMT行情源异常导致的",
+        "solution": "参考:https://bbs.quantclass.cn/thread/18505",
+        "keywords": [
+            "TypeError",
+            "'NoneType' object is not subscriptable",
+            "实盘框架"
+        ]
+    },
+    {
+        "reason": "原因QMT每天早盘数据是不稳定的，9点25分之前出现这个问题可以忽视。\n如果9点30分之后还这样的话，则需要看一下数据源是否有问题",
+        "solution": "参考:https://bbs.quantclass.cn/thread/18505",
+        "keywords": [
+            "KeyError",
+            "'xxxx.SH'",
+            "实盘框架"
+        ]
+    },
+    {
+        "reason": "原因是早盘数据不稳定造成的",
+        "solution": "参考:https://bbs.quantclass.cn/thread/18505",
+        "keywords": [
+            "KeyError",
+            "'最新价'",
+            "实盘框架"
+        ]
+    },
+    {
+        "reason": "原因是python版本过高，建议降低到3.8.16之内",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779",
+        "keywords": [
+            "ImportError",
+            "DLL load failed while importing",
+            "实盘框架"
+        ]
+    },
+    {
+        "reason": "对应xtqunt库没有找到",
+        "solution": "参考:https://bbs.quantclass.cn/thread/18505",
+        "keywords": [
+            "ModuleNotFoundError",
+            "No module named 'xtquant'",
+            "实盘框架"
+        ]
+    },
+    {
+        "reason": "原因是使用数据在更新的过程中，程序异常退出导致的文件损坏",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779",
+        "keywords": [
+            "pandas.errors.EmptyDataError",
+            "No columns to parse from file",
+            "实盘框架"
+        ]
+    },
+    {
+        "reason": "原因是自动交易时，QMT的极简模式程序需要一直开着",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779",
+        "keywords": [
+            "isNetError",
+            "true 本地数据路径：../userdata_mini/datadir",
+            "实盘框架"
+        ]
+    },
+    {
+        "reason": "原因有多个，建议看看常见贴Q13。",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779",
+        "keywords": [
+            "IndexError",
+            "single positional indexer is out-of-bounds",
+            "实盘框架"
+        ]
+    },
+    {
+        "reason": "相关环境里面没有xtquant包",
+        "solution": "在安装环境时输入如下命令，会一次性把所有的库都安装好（包括xtquant）\npip install -U xbx -i https://pypi.tuna.tsinghua.edu.cn/simple",
+        "keywords": [
+            "ModuleNotFoundError",
+            "No module named 'xtquant'"
+        ]
+    }
+]

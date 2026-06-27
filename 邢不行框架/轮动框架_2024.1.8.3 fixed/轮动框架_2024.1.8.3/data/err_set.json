@@ -1,0 +1,79 @@
+[
+    {
+        "reason": "这个报错会在【选股框架】、【轮动框架】和【实盘框架】中发生",
+        "solution": "参考:https://bbs.quantclass.cn/thread/38693",
+        "keywords": [
+            "IndexError",
+            "single positional indexer is out-of bounds",
+            "轮动框架"
+        ]
+    },
+    {
+        "reason": "原因是【轮动框架/program/Config.py】中的【select_program_path】配置错误导致的",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779",
+        "keywords": [
+            "KeyError",
+            "'period_offset_file'",
+            "轮动框架"
+        ]
+    },
+    {
+        "reason": "因为数据整理或者过滤或者pandas版本等一些其他原因导致，分箱的过程中出现了空数据",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779",
+        "keywords": [
+            "IndexError",
+            "cannot do a non-empty take from an empty axes",
+            "轮动框架"
+        ]
+    },
+    {
+        "reason": "原因是pandas的版本不对，请将pandas版本更新为1.5.3。",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779",
+        "keywords": [
+            "TypeError",
+            "unsupported operand type(s) for +: 'int' and 'str'",
+            "轮动框架"
+        ]
+    },
+    {
+        "reason": "此问题是因为轮动分箱数据出现异常，更新代码即可",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779",
+        "keywords": [
+            "TypeError",
+            "can only concatenate list (not \"int\"） to list",
+            "轮动框架"
+        ]
+    },
+    {
+        "reason": "此问题为代码bug，原因是早期的版本不支持选多个子策略。",
+        "solution": "参考：https://bbs.quantclass.cn/thread/37779",
+        "keywords": [
+            "FileNotFoundError",
+            "No such file or directory",
+            "轮动框架"
+        ]
+    },
+    {
+        "reason": "pands版本过高，需要将pandas版本更改为1.5.3",
+        "solution": "参考：http://qtcls.cn/37779\n前言部分",
+        "keywords": [
+            "ValueError",
+            "is both an index level and a column label,which is ambigous."
+        ]
+    },
+    {
+        "reason": "原因是分箱测试时，存在涨跌幅为空的数据。",
+        "solution": "将轮动框架更新到1.6及以上能免该问题发生",
+        "keywords": [
+            "TypeError:cumprod is not supported for object dtype",
+            "robustness_test"
+        ]
+    },
+    {
+        "reason": "pands版本过高，需要将pandas版本更改为1.5.3",
+        "solution": "参考：http://qtcls.cn/37779\n前言部分",
+        "keywords": [
+            "AttributeError: 'Rolling' object has no attribute 'rank'"
+        ]
+    }
+]
